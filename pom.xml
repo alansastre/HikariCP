@@ -52,12 +52,12 @@
       <pax.url.version>2.4.3</pax.url.version>
       <slf4j.version>1.7.12</slf4j.version>
       <log4j.version>2.4.1</log4j.version>
-          <!-- Jacoco Properties -->
-    <jacoco.version>0.7.4.201502262128</jacoco.version>
+
+    <!-- Sonar -->
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-    <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
-    <sonar.jacoco.itReportPath>${project.basedir}/target/coverage-reports/jacoco.exec</sonar.jacoco.itReportPath>
-    <sonar.language>java</sonar.language>       
+    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+    <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+    <sonar.language>java</sonar.language>
    </properties>
 
    <parent>
